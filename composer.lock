@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0419eb21b53d0c7ab95291bc5e54ad22",
+    "content-hash": "3e566d555f3f77c4e14ed48ed1b30498",
     "packages": [
         {
             "name": "guzzlehttp/guzzle",
@@ -215,16 +215,16 @@
         },
         {
             "name": "overtrue/socialite",
-            "version": "2.0.0",
+            "version": "2.0.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/overtrue/socialite.git",
-                "reference": "69feed573ac7a93c71d8e733c4d3ed3bfb2b04d1"
+                "reference": "f182ae99bf85e191982b68fcd02e464acaa72888"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/overtrue/socialite/zipball/69feed573ac7a93c71d8e733c4d3ed3bfb2b04d1",
-                "reference": "69feed573ac7a93c71d8e733c4d3ed3bfb2b04d1",
+                "url": "https://api.github.com/repos/overtrue/socialite/zipball/f182ae99bf85e191982b68fcd02e464acaa72888",
+                "reference": "f182ae99bf85e191982b68fcd02e464acaa72888",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -236,11 +236,14 @@
             "require": {
                 "guzzlehttp/guzzle": "~5.0|~6.0",
                 "php": ">=7.0",
-                "symfony/http-foundation": "^3.0|^4.0"
+                "symfony/http-foundation": "^2.7|^3.0|^4.0"
+            },
+            "conflict": {
+                "socialiteproviders/weixin": "*"
             },
             "require-dev": {
-                "mockery/mockery": "~0.9",
-                "phpunit/phpunit": "~4.0"
+                "mockery/mockery": "~1.2",
+                "phpunit/phpunit": "~6"
             },
             "type": "library",
             "autoload": {
@@ -267,7 +270,7 @@
                 "wechat",
                 "weibo"
             ],
-            "time": "2017-12-11T18:06:28+00:00"
+            "time": "2019-10-24T11:12:17+00:00"
         },
         {
             "name": "paragonie/random_compat",
