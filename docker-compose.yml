@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+
+  dev-phpfpm:
+    image: registry.cn-shenzhen.aliyuncs.com/nekoimi/phpfpm7.0:1.0
+    expose:
+      - "9000"
+    networks:
+      - tmp-dev-network
+    volumes:
+      - "./:/www"
+    restart: always
+    privileged: true
+
+networks:
+  tmp-dev-network:
+    driver: bridge
