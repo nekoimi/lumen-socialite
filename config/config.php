@@ -8,4 +8,22 @@
  */
 return [
 
+    'qq' => [
+        'client_id'     => '',
+        'client_secret' => '',
+        'redirect'      => '',
+    ],
+
+    'weibo' => [
+        'client_id'     => '',
+        'client_secret' => '',
+        'redirect'      => '',
+    ],
+
+    'wechat' => [
+        'client_id'     => '',
+        'client_secret' => '',
+        'redirect'      => '',
+    ]
+
 ];
