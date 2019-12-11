@@ -26,6 +26,17 @@ abstract class AbstractProvider extends BaseProvider
      */
     public function redirect($redirectUrl = null)
     {
+        return new RedirectResponse(
+            $this->redirectString($redirectUrl)
+        );
+    }
+
+
+    /**
+     * @param null $redirectUrl
+     * @return string
+     */
+    public function redirectString($redirectUrl = null) {
         $state = null;
 
         if (!is_null($redirectUrl)) {
@@ -36,7 +47,7 @@ abstract class AbstractProvider extends BaseProvider
             $state = !empty($this->state) ? $this->state : $this->makeState();
         }
 
-        return new RedirectResponse($this->getAuthUrl($state));
+        return $this->getAuthUrl($state);
     }
 
     /**
