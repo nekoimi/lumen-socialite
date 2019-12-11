@@ -10,6 +10,13 @@ You can easily use it in any PHP project.</p>
 ```
 PHP >= 7.0
 ```
+
+- QQ
+
+- Weibo
+
+- Wechat
+
 # Installation
 
 ```shell
