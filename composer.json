@@ -1,0 +1,24 @@
+{
+  "name": "nekoimi/lumen-socialite",
+  "description": "Social OAuth authentication for Lumen 5.",
+  "type": "library",
+  "require": {
+    "php": ">=7.0",
+    "overtrue/socialite": "2.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "6.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Nekoimi\\LumenSocialite": "src/"
+    }
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "nekoimi",
+      "email": "yyprisoner@gmail.com"
+    }
+  ]
+}

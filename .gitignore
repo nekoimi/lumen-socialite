@@ -1,0 +1,8 @@
+.idea/
+vendor/
+node_modules/
+storage/
+config/*.env.*.php
+config/env.*.php
+config/env.php
+app/
